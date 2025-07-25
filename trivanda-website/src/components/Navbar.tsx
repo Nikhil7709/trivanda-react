@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo-container">
-            <img src="/Final_trivanda_without_logo.png" alt="Trivanda Logo" className="logo-image" />
+            <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Logo" className="logo-image" />
             <div className="company-name">
               <span className="company-primary">Trivanda</span>
               <span className="company-secondary">Internationals</span>

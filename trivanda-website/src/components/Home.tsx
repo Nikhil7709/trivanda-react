@@ -107,25 +107,43 @@ const Home: React.FC = () => {
         </div>
       )}
       {/* Hero Section */}
-      <section className={`hero hero-bg ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef}>
+        <section className={`hero hero-bg ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef} style={{
+          backgroundImage: 'url(/dock_yard.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}>
         <div className="hero-content">
           <h1 className={`hero-title seo-headline ${heroIntersecting ? 'title-animate' : ''}`}>
-            123 Trusted Indian Exporter of Tutti Frutti, Paper Products & More – Delivering Quality Globally
+           Trusted Indian Exporter of Tutti Frutti, Paper Products & More – Delivering Quality Globally
           </h1>
           <p className={`hero-subtitle ${heroIntersecting ? 'subtitle-animate' : ''}`}>
-            Trivanda Internationals is a registered Indian export company, offering premium food and packaging products with global shipping, regulatory compliance, and customized B2B solutions.
+        Trivanda Internationals is a registered Indian export company, offering premium food and packaging products with global shipping, regulatory compliance, and customized B2B solutions.
           </p>
           <div className={`hero-buttons ${heroIntersecting ? 'buttons-animate' : ''}`}>
-            <Link to="/contact" className="btn btn-primary hero-btn-animate" style={{ '--delay': '0.1s' } as React.CSSProperties}>
-              Request a Quote
-            </Link>
-            <Link to="/products" className="btn btn-secondary hero-btn-animate" style={{ '--delay': '0.2s' } as React.CSSProperties}>
-              Explore Products <ArrowRight size={20} />
-            </Link>
+        <Link to="/contact" className="btn btn-primary hero-btn-animate" style={{ '--delay': '0.1s' } as React.CSSProperties}>
+          Request a Quote
+        </Link>
+        <Link to="/products" className="btn btn-secondary hero-btn-animate" style={{ '--delay': '0.2s' } as React.CSSProperties}>
+          Explore Products <ArrowRight size={20} />
+        </Link>
           </div>
         </div>
         <div className="hero-image">
-          {/* Background image handled in CSS */}
+          {/* Fallback image if background fails */}
+          <img
+            src="/dock_yard.png"
+            alt="Dock Yard"
+            style={{
+              display: 'none',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover'
+            }}
+            onError={e => {
+              (e.target as HTMLImageElement).style.display = 'block';
+            }}
+          />
         </div>
 
         {/* Animated background elements */}

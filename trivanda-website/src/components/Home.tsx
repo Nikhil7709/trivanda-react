@@ -82,7 +82,7 @@ const Home: React.FC = () => {
             
             <div className="splash-logo-container">
               <div className="splash-logo-glow"></div>
-              <img src="/Final_trivanda_without_logo.png" alt="Trivanda Internationals Logo" className="splash-logo" />
+              <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Internationals Logo" className="splash-logo" />
             </div>
             
             <div className="splash-subtitle">

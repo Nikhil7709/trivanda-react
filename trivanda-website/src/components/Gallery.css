@@ -1,0 +1,141 @@
+.gallery {
+  padding-top: 80px;
+}
+
+.gallery-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #667eea;
+  background: transparent;
+  color: #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab:hover,
+.tab.active {
+  background: #667eea;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-placeholder {
+  padding: 3rem;
+  text-align: center;
+  color: #667eea;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-placeholder h4 {
+  margin: 1rem 0 0.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.gallery-placeholder p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.gallery-info {
+  text-align: center;
+  padding: 3rem 0;
+  background: #f8f9fa;
+  margin: 0 -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gallery-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.gallery-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .gallery-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .gallery-tabs {
+    margin: 2rem 0;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .gallery-info h2 {
+    font-size: 2rem;
+  }
+} 

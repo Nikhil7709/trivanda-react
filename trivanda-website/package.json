@@ -2,7 +2,7 @@
   "name": "trivanda-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikhiljade.github.io/trivanda-website",
+  "homepage": "https://nikhil7709.github.io/trivanda-react",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

@@ -110,7 +110,7 @@ const Home: React.FC = () => {
       <section className={`hero hero-bg ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef}>
         <div className="hero-content">
           <h1 className={`hero-title seo-headline ${heroIntersecting ? 'title-animate' : ''}`}>
-            Trusted Indian Exporter of Tutti Frutti, Paper Products & More – Delivering Quality Globally
+            123 Trusted Indian Exporter of Tutti Frutti, Paper Products & More – Delivering Quality Globally
           </h1>
           <p className={`hero-subtitle ${heroIntersecting ? 'subtitle-animate' : ''}`}>
             Trivanda Internationals is a registered Indian export company, offering premium food and packaging products with global shipping, regulatory compliance, and customized B2B solutions.

@@ -82,7 +82,8 @@ const Home: React.FC = () => {
             
             <div className="splash-logo-container">
               <div className="splash-logo-glow"></div>
-              <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Internationals Logo" className="splash-logo" />
+              {/* <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Internationals Logo" className="splash-logo" /> */}
+              <img src={`${process.env.PUBLIC_URL}/Trivanda-Logo-without-bg.png`} alt="Trivanda Internationals Logo" className="splash-logo" />
             </div>
             
             <div className="splash-subtitle">

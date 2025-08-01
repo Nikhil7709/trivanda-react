@@ -52,10 +52,10 @@ const Footer: React.FC = () => {
               <a href="#" className="social-link" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/trivandainternationals?igsh=MTNkZnY2M2VqN29mbg==" className="social-link" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61577773122669" className="social-link" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
             </div>

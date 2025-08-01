@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Target, Heart, Award, Users, Globe, TrendingUp, Shield, Star } from 'lucide-react';
 import './About.css';
+import { color } from 'framer-motion';
 
 // Custom intersection observer hook
 const useIntersectionObserver = (options = {}) => {
@@ -35,7 +36,7 @@ const About: React.FC = () => {
     <div className="about">
       <div className={`about-hero ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef}>
         <div className="container">
-          <h1 className={`hero-title ${heroIntersecting ? 'title-animate' : ''}`}>About Trivanda Internationals – Your Trusted Export Partner from India</h1>
+          <h1 className={`hero-title ${heroIntersecting ? 'title-animate' : ''}`} style={{ color: 'white' }}>About Trivanda Internationals – Your Trusted Export Partner from India</h1>
         </div>
         <div className="hero-bg-elements">
           <div className="hero-bg-shape hero-bg-shape-1"></div>
@@ -56,7 +57,7 @@ const About: React.FC = () => {
           </div>
           <div className={`story-image ${storyIntersecting ? 'image-animate' : ''}`}>
             <div className="image-placeholder">
-              <img src="/world_map.png" alt="World Map" style={{ width: '100%', maxWidth: '340px', height: 'auto', borderRadius: '12px', boxShadow: '0 2px 16px rgba(0,0,0,0.08)' }} />
+              <img src={`${process.env.PUBLIC_URL}/world_map.png`} alt="World Map" style={{ width: '100%', maxWidth: '340px', height: 'auto', borderRadius: '12px', boxShadow: '0 2px 16px rgba(0,0,0,0.08)' }} />
             </div>
           </div>
           <div className="story-bg-elements">

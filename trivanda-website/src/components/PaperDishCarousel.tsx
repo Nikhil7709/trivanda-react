@@ -1,10 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './TuttiFruttiCarousel.css';
 
+// const images = [
+//   '/paper-dish-3.jpg',
+//   '/paper-dish-2.jpg',
+//   '/paper-dish-1.jpg',
+// ];
+
 const images = [
-  '/paper-dish-3.jpg',
-  '/paper-dish-2.jpg',
-  '/paper-dish-1.jpg',
+  `${process.env.PUBLIC_URL}/paper-dish-3.jpg`,
+  `${process.env.PUBLIC_URL}/paper-dish-2.jpg`,
+  `${process.env.PUBLIC_URL}/paper-dish-1.jpg`,
 ];
 
 const PaperDishCarousel: React.FC = () => {

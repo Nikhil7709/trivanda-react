@@ -50,11 +50,13 @@ const Products: React.FC = () => {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      const element = document.querySelector(hash);
+      const id = hash.replace(/^#\/?/, ''); // removes "#/" or "#"
+      const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
   }, []);
 
   return (
@@ -191,12 +193,16 @@ const Products: React.FC = () => {
                 <p>All our products meet international quality standards</p>
               </div> */}
               <div className={`quality-item quality-item-animate ${qualityIntersecting ? 'item-animate' : ''}`} style={{ '--delay': '0.1s' } as React.CSSProperties}>
-                <img src="/testing.jpg" alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} />
+                {/* <img src="/testing.jpg" alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} /> */}
+                <img src={`${process.env.PUBLIC_URL}/testing.jpg`} alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} />
+                
                 <h4>Regular Testing</h4>
                 <p>Comprehensive quality testing at every production stage</p>
               </div>
               <div className={`quality-item quality-item-animate ${qualityIntersecting ? 'item-animate' : ''}`} style={{ '--delay': '0.2s' } as React.CSSProperties}>
-                <img src="/testing1.jpg" alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} />
+                {/* <img src="/testing1.jpg" alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} /> */}
+                <img src={`${process.env.PUBLIC_URL}/testing1.jpg`} alt="Traceability" style={{ width: '100%', maxWidth: 120, borderRadius: 8, margin: '0 auto 1rem auto', display: 'block' }} />
+
                 <h4>Traceability</h4>
                 <p>Complete product traceability from source to delivery</p>
               </div>

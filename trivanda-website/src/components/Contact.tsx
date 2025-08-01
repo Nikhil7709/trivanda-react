@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
     <div className="contact">
       <div className={`contact-hero ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef}>
         <div className="container">
-          <h1 className={`hero-title ${heroIntersecting ? 'title-animate' : ''}`}>Contact Us</h1>
+          <h1 className={`hero-title ${heroIntersecting ? 'title-animate' : ''}`} style={{ color: 'white' }}>Contact Us</h1>
           <p className={`hero-description ${heroIntersecting ? 'description-animate' : ''}`}>Get in touch with us for any inquiries or business opportunities</p>
         </div>
         <div className="hero-bg-elements">

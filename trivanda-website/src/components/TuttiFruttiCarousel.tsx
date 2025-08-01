@@ -1,12 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './TuttiFruttiCarousel.css';
 
+// const images = [
+//   '/tutty-frutty-candy.jpg',
+//   '/mixed-tutty-frutty1.jpg',
+//   '/mixed-tutty-frutty2.png',
+//   '/mixed-tutty-frutty1_2.jpg',
+// ];
+
 const images = [
-  '/tutty-frutty-candy.jpg',
-  '/mixed-tutty-frutty1.jpg',
-  '/mixed-tutty-frutty2.png',
-  '/mixed-tutty-frutty1_2.jpg',
+  `${process.env.PUBLIC_URL}/tutty-frutty-candy.jpg`,
+  `${process.env.PUBLIC_URL}/mixed-tutty-frutty1.jpg`,
+  `${process.env.PUBLIC_URL}/mixed-tutty-frutty2.png`,
+  `${process.env.PUBLIC_URL}/mixed-tutty-frutty1_2.jpg`,
 ];
+
 
 const TuttiFruttiCarousel: React.FC = () => {
   const [current, setCurrent] = useState(0);

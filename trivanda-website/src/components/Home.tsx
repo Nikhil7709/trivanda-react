@@ -82,7 +82,9 @@ const Home: React.FC = () => {
             
             <div className="splash-logo-container">
               <div className="splash-logo-glow"></div>
-              <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Internationals Logo" className="splash-logo" />
+              {/* <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Internationals Logo" className="splash-logo" /> */}
+              <img src={`${process.env.PUBLIC_URL}/Trivanda-Logo-without-bg.png`} alt="Trivanda Internationals Logo" className="splash-logo" />
+            
             </div>
             
             <div className="splash-subtitle">
@@ -108,7 +110,7 @@ const Home: React.FC = () => {
       )}
      {/* Hero Section */}
         <section className={`hero hero-bg ${heroIntersecting ? 'animate-in' : ''}`} ref={heroRef} style={{
-          backgroundImage: 'url(/dock_yard.png)',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/dock_yard.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -129,22 +131,6 @@ const Home: React.FC = () => {
         </Link>
           </div>
         </div>
-        <div className="hero-image">
-          {/* Fallback image if background fails */}
-          <img
-            src="/dock_yard.png"
-            alt="Dock Yard"
-            style={{
-              display: 'none',
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover'
-            }}
-            onError={e => {
-              (e.target as HTMLImageElement).style.display = 'block';
-            }}
-          />
-        </div>
 
         {/* Animated background elements */}
         <div className="hero-bg-elements">
@@ -162,14 +148,17 @@ const Home: React.FC = () => {
           <div className={`products-grid ${productsIntersecting ? 'grid-animate' : ''}`}>
             <div className={`product-card product-card-animate ${productsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.1s' } as React.CSSProperties}>
               <div className="product-icon-container">
-                <img src="/mixed-tutty-frutty1.jpg" alt="Tutti Frutti" className="product-icon-image" />
+                {/* <img src="/mixed-tutty-frutty1.jpg" alt="Tutti Frutti" className="product-icon-image" /> */}
+                <img src={`${process.env.PUBLIC_URL}/mixed-tutty-frutty1.jpg`} alt="Tutti Frutti" className="product-icon-image" />
+
               </div>
               <h3>Tutti Frutti</h3>
               <p>Vibrant, high-quality candied fruit for baking & desserts</p>
             </div>
             <div className={`product-card product-card-animate ${productsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.2s' } as React.CSSProperties}>
               <div className="product-icon-container">
-                <img src="/paper-dish-1.jpg" alt="Paper Dishes & Disposable Tableware" className="product-icon-image" />
+                {/* <img src="/paper-dish-1.jpg" alt="Paper Dishes & Disposable Tableware" className="product-icon-image" /> */}
+                <img src={`${process.env.PUBLIC_URL}/paper-dish-1.jpg`} alt="Paper Dishes & Disposable Tableware" className="product-icon-image" />
               </div>
               <h3>Paper Dishes & Disposable Tableware</h3>
               <p>Eco-friendly, export-grade packaging solutions</p>
@@ -199,7 +188,7 @@ const Home: React.FC = () => {
             <div className={`country-card country-card-animate ${globalIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.1s' } as React.CSSProperties}>
               <div className="country-flag-container">
                 <div className="country-flag">
-                  <img src="/canada.png" alt="Canada Flag" className="country-flag-image" />
+                <img src={`${process.env.PUBLIC_URL}/canada.png`} alt="Canada Flag" className="country-flag-image" />
                 </div>
               </div>
               <div className="country-info">
@@ -210,7 +199,8 @@ const Home: React.FC = () => {
             <div className={`country-card country-card-animate ${globalIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.2s' } as React.CSSProperties}>
               <div className="country-flag-container">
                 <div className="country-flag">
-                  <img src="/UAE.png" alt="UAE Flag" className="country-flag-image" />
+                  {/* <img src="/UAE.png" alt="UAE Flag" className="country-flag-image" /> */}
+                  <img src={`${process.env.PUBLIC_URL}/UAE.png`} alt="UAE Flag" className="country-flag-image" />
                 </div>
               </div>
               <div className="country-info">
@@ -221,7 +211,7 @@ const Home: React.FC = () => {
             <div className={`country-card country-card-animate ${globalIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.3s' } as React.CSSProperties}>
               <div className="country-flag-container">
                 <div className="country-flag">
-                  <img src="/UK.png" alt="UK Flag" className="country-flag-image" />
+                  <img src={`${process.env.PUBLIC_URL}/UK.png`} alt="UK Flag" className="country-flag-image" />
                 </div>
               </div>
               <div className="country-info">
@@ -232,7 +222,7 @@ const Home: React.FC = () => {
             <div className={`country-card country-card-animate ${globalIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.4s' } as React.CSSProperties}>
               <div className="country-flag-container">
                 <div className="country-flag">
-                  <img src="/USA.png" alt="USA Flag" className="country-flag-image" />
+                  <img src={`${process.env.PUBLIC_URL}/USA.png`} alt="USA Flag" className="country-flag-image" />
                 </div>
               </div>
               <div className="country-info">
@@ -243,7 +233,7 @@ const Home: React.FC = () => {
             <div className={`country-card country-card-animate ${globalIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.5s' } as React.CSSProperties}>
               <div className="country-flag-container">
                 <div className="country-flag">
-                  <img src="/Africa.png" alt="Africa Flag" className="country-flag-image" />
+                  <img src={`${process.env.PUBLIC_URL}/Africa.png`} alt="Africa Flag" className="country-flag-image" />
                 </div>
               </div>
               <div className="country-info">
@@ -335,31 +325,31 @@ const Home: React.FC = () => {
           <p className={`certifications-description ${certificationsIntersecting ? 'description-animate' : ''}`} style={{color: 'black'}}>Registered and certified under various government and industry bodies</p>
           <div className={`certifications-grid ${certificationsIntersecting ? 'grid-animate' : ''}`}>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.1s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/MSME-logo.png" alt="MSME" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/MSME-logo.png`} alt="MSME" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>MSME</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.2s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/udhyog-aadhar.jpg" alt="Udyog Adhar" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/udhyog-aadhar.jpg`} alt="Udyog Adhar" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>Udyog Adhar</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.3s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/GST.png" alt="GST" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/GST.png`} alt="GST" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>GST</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.4s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/ficci-logo.png" alt="FICCI" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/ficci-logo.png`} alt="FICCI" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>FICCI</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.5s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/FIEO.png" alt="FIEO" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/FIEO.png`} alt="FIEO" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>FIEO</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.6s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/dgft.png" alt="DGFT" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/dgft.png`} alt="DGFT" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>DGFT</span>
             </div>
             <div className={`certification-card certification-card-animate ${certificationsIntersecting ? 'card-animate' : ''}`} style={{ '--delay': '0.7s' } as React.CSSProperties}>
-              <div className="certification-icon"><img src="/APEDA-logo.png" alt="APEDA" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
+              <div className="certification-icon"><img src={`${process.env.PUBLIC_URL}/APEDA-logo.png`} alt="APEDA" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} /></div>
               <span>APEDA</span>
             </div>
           </div>

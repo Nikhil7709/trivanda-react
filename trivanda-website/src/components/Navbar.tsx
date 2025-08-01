@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo-container">
-            <img src="/Trivanda-Logo-without-bg.png" alt="Trivanda Logo" className="logo-image" />
+            <img src={`${process.env.PUBLIC_URL}/Trivanda-Logo-without-bg.png`} alt="APEDA" style={{ width: 32, height: 32, objectFit: 'contain', borderRadius: 4, background: '#fff' }} />
             <div className="company-name">
               <span className="company-primary">Trivanda</span>
               <span className="company-secondary">Internationals</span>

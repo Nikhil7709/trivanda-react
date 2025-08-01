@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trivanda-react/static/css/main.dcc8db0f.css",
-    "main.js": "/trivanda-react/static/js/main.68be971b.js",
+    "main.js": "/trivanda-react/static/js/main.31fbc4ac.js",
     "static/js/453.d53c2941.chunk.js": "/trivanda-react/static/js/453.d53c2941.chunk.js",
     "index.html": "/trivanda-react/index.html",
     "main.dcc8db0f.css.map": "/trivanda-react/static/css/main.dcc8db0f.css.map",
-    "main.68be971b.js.map": "/trivanda-react/static/js/main.68be971b.js.map",
+    "main.31fbc4ac.js.map": "/trivanda-react/static/js/main.31fbc4ac.js.map",
     "453.d53c2941.chunk.js.map": "/trivanda-react/static/js/453.d53c2941.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcc8db0f.css",
-    "static/js/main.68be971b.js"
+    "static/js/main.31fbc4ac.js"
   ]
 }

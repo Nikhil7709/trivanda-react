@@ -5,7 +5,7 @@ import './WhatsAppButton.css';
 const WhatsAppButton: React.FC = () => {
   return (
     <a 
-      href="https://wa.me/919999999999" 
+      href="https://wa.me/919225101364" 
       className="whatsapp-float" 
       target="_blank" 
       rel="noopener noreferrer" 

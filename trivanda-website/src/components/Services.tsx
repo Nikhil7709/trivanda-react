@@ -256,7 +256,7 @@ const Services: React.FC = () => {
 
   const handleSendMessage = () => {
     // You can replace this with actual WhatsApp or email link
-    window.open('https://wa.me/919876543210?text=Hi! I\'m interested in your services. Can you help me?', '_blank');
+    window.open('https://wa.me/919225101364?text=Hi! I\'m interested in your services. Can you help me?', '_blank');
   };
 
   const [heroRef, heroIntersecting] = useIntersectionObserver();
